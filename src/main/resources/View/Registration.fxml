@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="397.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.RegistrationController">
+    <children>
+        <Label layoutX="141.0" layoutY="35.0" text="Registration ">
+            <font>
+                <Font name="System Bold" size="19.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtUserId" layoutX="38.0" layoutY="108.0" prefHeight="34.0" prefWidth="331.0" promptText="Input your user id" />
+        <TextField fx:id="txtPw" layoutX="38.0" layoutY="270.0" prefHeight="34.0" prefWidth="331.0" promptText="Input your password" />
+        <TextField fx:id="txtName" layoutX="38.0" layoutY="191.0" prefHeight="34.0" prefWidth="331.0" promptText="Input your name" />
+        <Label layoutX="38.0" layoutY="85.0" text="User ID" />
+        <Label layoutX="42.0" layoutY="163.0" text="Name" />
+        <Label layoutX="38.0" layoutY="247.0" text="Password" />
+        <JFXButton buttonType="RAISED" layoutX="109.0" layoutY="334.0" onAction="#RegistrationOnAction" prefHeight="34.0" prefWidth="168.0" style="-fx-background-color: C65BCF;" text="Register Now" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </JFXButton>
+    </children>
+</AnchorPane>

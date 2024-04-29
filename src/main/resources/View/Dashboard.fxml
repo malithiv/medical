@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" prefHeight="419.0" prefWidth="530.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.DashboardController">
+    <children>
+        <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="44.0" layoutY="118.0" onAction="#btnDoctorOnAction" prefHeight="112.0" prefWidth="128.0" style="-fx-background-color: #8644A2;" text="Doctor" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="201.0" layoutY="118.0" onAction="#btnPatientOnAction" prefHeight="112.0" prefWidth="128.0" style="-fx-background-color: #D862BC;" text="Patient" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="360.0" layoutY="118.0" onAction="#btnAppointmentOnAction" prefHeight="112.0" prefWidth="128.0" style="-fx-background-color: #E59BE9;" text="Appointment" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="438.0" layoutY="371.0" onAction="#btnExitOnAction" style="-fx-background-color: #fab1a0;" text="Exit" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </JFXButton>
+      <Label layoutX="206.0" layoutY="39.0" text="Dashboard" textFill="#2c3e50">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

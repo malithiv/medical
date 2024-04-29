@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root fx:id="rootNode" prefHeight="357.0" prefWidth="336.0" style="-fx-background-color: #0000;" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.LoginController">
+    <children>
+        <Label layoutX="142.0" layoutY="24.0" text="Login">
+            <font>
+                <Font name="System Bold" size="19.0" />
+            </font>
+        </Label>
+        <TextField fx:id="username" layoutX="35.0" layoutY="99.0" prefHeight="41.0" prefWidth="277.0" promptText="user name" />
+        <JFXButton buttonType="RAISED" layoutX="34.0" layoutY="247.0" onAction="#loginButton" prefHeight="32.0" prefWidth="277.0" style="-fx-background-color: ADD8E6;" text="Login" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <Label layoutX="40.0" layoutY="293.0" text="Don't have an account?" textFill="#636e72" />
+        <Hyperlink layoutX="197.0" layoutY="290.0" onAction="#RegistrationOnAction" prefHeight="22.0" prefWidth="121.0" text="Register on here" />
+        <Label layoutX="34.0" layoutY="77.0" text="user name:" />
+        <Label layoutX="34.0" layoutY="158.0" text="password" />
+      <PasswordField fx:id="password" layoutX="32.0" layoutY="179.0" prefHeight="41.0" prefWidth="277.0" promptText="password" />
+    </children>
+</fx:root>
